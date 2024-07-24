@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 구조 선택자</title>
+     <!-- 
+        날짜 : 2024/07/23
+        이름 : 하진희
+        내용 : CSS 구조 선택자 실습하기
+     -->
+
+     <style>
+        /* 구조선택자 */
+        #city > li:first-child{
+            color:red;
+        }
+        #city > li:nth-child(2){color:blue;}
+        #city > li:nth-child(3){color: gray;}
+        #city > em:nth-child(6){color: orange}
+        /* child의 순서는 위에서부터 쭉  */
+        #city > em:nth-of-type(2){color: magenta;}
+        /* nth-of-type는 해당 태그에서의 순서를 적어야함 */
+        #city > em:last-child{color: dodgerblue;}
+
+
+        ul:nth-of-type(2) > li:first-child{
+            color:red;
+            width :50px;
+            border: 1px solid red;
+        }
+
+        /* body의 자손중 3번째  */
+        body>ul:nth-child(3)>li:nth-child(4){ 
+            color:chocolate;
+
+        }
+
+        /* ul타입중에 두번째 */
+        ul:nth-of-type(2) > li:nth-child(2){
+            color: green;
+            width :50px;
+            border: 1px solid green;
+        }
+        ul:last-of-type >li:nth-child(3){
+            color: blue;
+            width :50px;
+            border : 1px solid blue;
+        }
+        </style>
+
+</head>
+<body>
+    <h3>CSS 구조 선택자</h3>
+    <ul id="city">
+        <li>서울</li>
+        <li>대전</li>
+        <li>대구</li>
+        <li>부산</li>
+        <li>광주</li>
+        <em>인천</em>
+        <em>울산</em>
+        <em>세종</em>
+    </ul>
+
+    <ul>
+        <li>한국</li>
+        <li>미국</li>
+        <li>일본</li>
+        <li>중국</li>
+        <li>호주</li>
+    </ul>
+    
+</body>
+</html>
