@@ -21,11 +21,10 @@ div{
     unicode-bidi: isolate;
 }
 /* header */
-header{
+header {
     width: 100%;
     height: 80px;
-    border: 1px solid blue;
-
+    background: url(../images/header_bg.gif);
 }
 
 
@@ -35,7 +34,7 @@ header > div {
     box-sizing: border-box;
     margin:0 auto;
     position: relative;
-    border:1px solid green;
+   
 
 }
 
@@ -256,7 +255,7 @@ main > section > aside {
     box-sizing: border-box;
 }
 
-section > aside > article{
+main > section > aside > article {
     width: 100%;
     height: 204px;
     padding: 10px;
@@ -264,10 +263,28 @@ section > aside > article{
     overflow: hidden;
 }
 
+main > section > aside > article > h3 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main > section > aside > article > a {
+    display: block;
+    width: 100%;
+    height: 34px;
+    border: 1px solid #d9d9d9;
+    margin-top: 6px;
+    font-size: 0;
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
 main>section>aside>article{
     font-weight: bold;
     font-size: 14px;
 }
+
 main > section > aside > article > ul {
     margin-top: 6px;
 }
@@ -343,21 +360,65 @@ main > section > aside > .banner > a > img {
     margin-left: 10px;
     margin-top: 10px;
 }
-section > article{
+main > section > article {
     float: right;
     width: 800px;
     height: 250px;
-    border: 1px solid green;
-    box-sizing: border-box;
     margin-top: 5px;
+    padding: 16px;
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
 }
 
-footer{
+main > section > article > h3 > a {
+    float: right;
+}
+
+main > section > article > ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 26px;
+}
+
+main > section > article > ul > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+main > section > article > ul .thumb {
+    width: 150px;
+    height: 100px;
+}
+
+
+main > section > article > ul > li > a {
+    display: block;
+    text-align: center;
+}
+footer {
     width: 1000px;
     height: 130px;
-    border: 1px solid blue;
-    margin:0 auto;
+    border: 1px solid #d7d7d7;
+    border-top: 2px solid #777777;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
     margin-bottom: 10px;
 }
 
+footer > p {
+    font-size: 11.5px;
+    color: #585858;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+
+footer > p > span {
+    display: block;
+    margin-top: 6px;
+    font-weight: bold;
+}
 
