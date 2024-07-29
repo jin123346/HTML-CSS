@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제</title>
+    <!--
+        날짜: 2024/07/25
+        이름 : 하진희
+        내용 : 연습문제 속성 실습하기
+    -->
+    <style>
+        article {
+            display: inline-block;
+
+        }
+
+        article>div {
+            width: 300px;
+            height: 300px;
+            border: 1px dashed black;
+        }
+
+        .box1 {
+            position: relative;
+        }
+
+        .box1>div {
+
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0px;
+        }
+
+        .box2 {
+            position: relative;
+        }
+
+        .box2>div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .box3 {
+            position: relative;
+        }
+
+        .box3>div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+        .box3>div>div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .box4 {
+            position: relative;
+        }
+
+        .box4>div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            box-sizing: border-box;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        .box4>div>div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            box-sizing: border-box;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .box5 {
+            position: relative;
+
+        }
+
+        .box5>div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-color: green;
+            box-sizing: border-box;
+        }
+
+        .box5>div>div {
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top: 50%;
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            box-sizing: border-box;
+
+        }
+
+        .box6 {
+            position: relative;
+
+        }
+
+        .box6>div {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 50%;
+            margin-left: -100px;
+            top: 50%;
+            margin-top: -100px;
+            background-color: green;
+            box-sizing: border-box;
+        }
+
+        .box6>div>div {
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top: 50%;
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            box-sizing: border-box;
+
+        }
+
+        
+        .box7 > div{
+            float:left;
+            width: 100px;
+            height: 100px;
+        }
+ /* 문제7 */
+ .box7 > div {
+            width: 100px;
+            height: 100px;   
+        }
+
+        .box7 > div:nth-child(1) {
+            margin: 0 auto;
+            background: red;
+        }
+        .box7 > div:nth-child(2) {
+            float:left;
+            background: green;
+        }
+        .box7 > div:nth-child(3) {
+            float: right;
+            background: blue;
+        }
+        .box7 > div:nth-child(4) {
+            float:left;
+            clear: both;
+            margin-left: 100px;
+            background: orange;
+        }
+
+        /* 문제8 */
+        .box8 > div {
+            width: 100px;
+            height: 100px;   
+        }
+
+        .box8 > div:nth-child(1) {            
+            float: left;
+            background: red;
+        }
+        .box8 > div:nth-child(2) {
+            float: right;
+            background: green;
+        }
+        .box8 > div:nth-child(3) {
+            float: left;
+            clear: both;
+            margin-left: 100px;
+            background: orange;
+        }
+        .box8 > div:nth-child(4) {
+            float:left;
+            clear: both;
+            background: pink;
+        }
+        .box8 > div:nth-child(5) {
+            float:right;
+            background: blue;
+        }
+        /* .box7> div:nth-child(1){
+          
+            margin-left: 100px;
+            background-color: red;
+
+        }
+        .box7> div:nth-child(2){
+            clear: 
+            background-color: green;
+           
+        }
+        .box7> div:nth-child(3){
+            
+            clear:both;
+            margin-left: 100px;
+            background-color: yellow;
+        }
+        .box7> div:nth-child(4){
+           
+            margin: auto;
+            background-color: blue;
+        }
+
+
+        .box8 {
+            position: relative;
+        }
+
+        .box8 > div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box  ;
+            position: absolute;
+            background-color: red;
+        }
+        .box8 > div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box  ;
+            position: absolute;
+            right: 0;
+            background-color: green;
+        }
+
+        .box8 > div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box  ;
+            position: absolute;
+            margin-left: 50%;
+            left:-50px;
+            margin-right: 50%;
+            right: -50px;
+            margin-top: 50%;
+            top: -50px;
+            background-color: yellow;
+        }
+        .box8 > div:nth-child(4){
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box  ;
+            position: absolute;
+            background-color: pink;
+        }
+        .box8 > div:nth-child(5){
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box  ;
+            position: absolute;
+            background-color: blue;
+        }
+ */
+
+        .box9 > div{
+            width: 100px;
+            height: 100px;
+            float: left;
+
+        }
+
+        .box9 > div:nth-child(1) {background-color: red;}
+        .box9 > div:nth-child(2) {background-color: green;}
+        .box9 > div:nth-child(3) {background-color: blue;}
+        .box9 > div:nth-child(4) {background-color: orange;}
+        .box9 > div:nth-child(5) {background-color: pink;}
+        .box9 > div:nth-child(6) {background-color: brown;clear:left; }
+
+        .box10 > div{
+            width: 100px;
+            height: 100px;
+            float: right;
+
+        }
+
+        .box10 > div:nth-child(1) {background-color: red;}
+        .box10 > div:nth-child(2) {background-color: green;clear: right;}
+        .box10 > div:nth-child(3) {background-color: blue; }
+        .box10 > div:nth-child(4) {background-color: orange; clear:right;}
+        .box10 > div:nth-child(5) {background-color: pink;}
+        .box10 > div:nth-child(6) {background-color: brown; }
+    </style>
+
+</head>
+
+<body>
+
+    <article>
+        <h4>1.다음과 같이 배치하시오.</h4>
+        <div class="box1">
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>2.다음과 같이 배치하시오.</h4>
+        <div class="box2">
+            <div></div>
+        </div>
+    </article>
+
+    <article>
+        <h4>3.다음과 같이 배치하시오.</h4>
+        <div class="box3">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h4>4.다음과 같이 배치하시오.</h4>
+        <div class="box4">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h4>5.다음과 같이 배치하시오.</h4>
+        <div class="box5">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h4>6.다음과 같이 배치하시오.</h4>
+        <div class="box6">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h4>7.다음과 같이 배치하시오.</h4>
+        <div class="box7">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>8.다음과 같이 배치하시오.</h4>
+        <div class="box8">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>9.다음과 같이 배치하시오.</h4>
+        <div class="box9">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+    <article>
+        <h4>10.다음과 같이 배치하시오.</h4>
+        <div class="box10">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </article>
+
+    
+
+
+</body>
+
+</html>
