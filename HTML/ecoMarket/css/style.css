@@ -409,10 +409,9 @@ main > .grain_banner{
 main > .grain_banner > img{
     position: relative;
     left: 50%;
-    top: 50px;
+    top: 20px;
     margin-left:-180px ;
 }
-
 
 
 /* footer */
@@ -420,6 +419,7 @@ footer{
     width: 100%;
     height: auto;
     box-sizing: border-box;
+    background: #f1f1f1
 }
 
 footer > div{
@@ -427,6 +427,22 @@ footer > div{
     height: 210px;
     box-sizing: border-box;
     margin: 0 auto;
+    padding-top: 20px;
+   
 }
 
+foooter > div > img{
+    float: left;
+}
+
+footer > div > p{
+    float: right;
+    margin-right: 210px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #aca9a9;
+    text-align: left;
+    line-height: 22px;
+}
 
